@@ -2,138 +2,134 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>INDIE Savings Account – Refer & Earn</title>
+<title>INDIE – Savings Account & UPI | Refer & Earn</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Open INDIE Savings Account by IndusInd Bank. Zero balance digital account. Use referral code slzklx4r and earn up to ₹250 cashback.">
+<meta name="description" content="INDIE Savings Account & UPI app by IndusInd Bank. Refer & Earn using referral code slzklx4r.">
 
 <style>
-/* 🔴 VERY IMPORTANT */
-html, body{
-  width:100%;
-  height:100%;
+/* ===== GLOBAL RESET ===== */
+*{
+  box-sizing:border-box;
   margin:0;
   padding:0;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ✅ BACKGROUND FIX */
-.page{
+html, body{
   min-height:100vh;
-  background:#0b0f1a;
+}
+
+/* ===== PAYTM STYLE BACKGROUND ===== */
+body{
+  background:
+    radial-gradient(circle at bottom, #00c6ff 0%, transparent 45%),
+    radial-gradient(circle at top, #1a73e8 0%, transparent 45%),
+    #0b0f1a;
   color:#ffffff;
 }
 
-/* Header */
-header{
-  background:#11162a;
-  padding:30px 20px;
-}
-.header-box{
+/* ===== LAYOUT ===== */
+.wrapper{
   max-width:900px;
   margin:auto;
+  padding:30px 15px;
+}
+
+/* ===== HEADER ===== */
+.header{
   display:flex;
   align-items:center;
   gap:15px;
+  background:rgba(255,255,255,0.08);
+  padding:20px;
+  border-radius:16px;
 }
-.app-icon{
+.header img{
   width:56px;
   height:56px;
   border-radius:12px;
-  background:#ffffff;
+  background:#fff;
 }
-.header-text h1{
+.header h1{
   font-size:24px;
+  margin:0;
 }
-.header-text p{
+.header p{
   margin-top:6px;
-  color:#cfcfcf;
+  color:#cfefff;
   font-size:14px;
 }
-.badge{
-  display:inline-block;
-  margin-top:6px;
-  padding:5px 10px;
-  font-size:12px;
-  border-radius:10px;
-  background:#243b6b;
-  color:#dbe8ff;
-}
 
-/* Container */
-.container{
-  max-width:900px;
-  margin:20px auto;
-  padding:15px;
-}
-
-/* Card */
+/* ===== CARD ===== */
 .card{
-  background:#151b2f;
-  border-radius:12px;
-  padding:18px;
-  margin-bottom:15px;
-  border:1px solid #22284a;
+  background:rgba(255,255,255,0.10);
+  border:1px solid rgba(255,255,255,0.18);
+  border-radius:18px;
+  padding:22px;
+  margin-top:22px;
 }
 
-/* Referral */
-.ref-row{
+/* ===== INFO ===== */
+.label{
+  margin-top:14px;
+  font-size:14px;
+  color:#cfefff;
+}
+.row{
   display:flex;
-  align-items:center;
+  flex-wrap:wrap;
   gap:10px;
   margin-top:8px;
 }
-.ref-code{
-  background:#1e2542;
-  padding:8px 12px;
-  border-radius:8px;
+.value{
+  background:rgba(0,0,0,0.35);
+  padding:10px 14px;
+  border-radius:10px;
   font-weight:bold;
-  letter-spacing:1px;
 }
-.copy-btn{
-  padding:8px 12px;
-  background:#1f6bff;
+.copy{
+  padding:10px 14px;
+  background:linear-gradient(135deg,#00c6ff,#0072ff);
   border:none;
-  border-radius:8px;
+  border-radius:10px;
   color:#fff;
   cursor:pointer;
 }
 
-/* Button */
+/* ===== BUTTON ===== */
 .btn{
   display:inline-block;
-  margin-top:15px;
-  padding:12px 18px;
-  background:#1f6bff;
+  margin-top:20px;
+  padding:14px 24px;
+  background:linear-gradient(135deg,#00c6ff,#0072ff);
   color:#fff;
   text-decoration:none;
-  border-radius:10px;
-  font-size:14px;
+  border-radius:14px;
+  font-weight:600;
 }
 
-/* List */
+/* ===== LIST ===== */
 ul{
-  margin-top:10px;
   margin-left:18px;
 }
 ul li{
-  margin-bottom:6px;
-  font-size:14px;
-  color:#e0e0e0;
+  margin-bottom:8px;
+  color:#e9f6ff;
 }
 
-/* Back */
+/* ===== BACK ===== */
 .back{
   display:block;
-  margin-top:20px;
-  font-size:13px;
-  color:#9aa8ff;
+  margin-top:28px;
+  color:#9fdcff;
   text-decoration:none;
+  font-size:14px;
 }
 
-/* Mobile */
+/* ===== MOBILE ===== */
 @media(max-width:600px){
-  .header-box{
+  .header{
     flex-direction:column;
     align-items:flex-start;
   }
@@ -143,54 +139,77 @@ ul li{
 
 <body>
 
-<!-- 🔴 PAGE WRAPPER -->
-<div class="page">
+<div class="wrapper">
 
-<header>
-  <div class="header-box">
-    <img class="app-icon"
-         src="https://play-lh.googleusercontent.com/qy1nK2i6PLrD5YDe5er0q827BfEz7fDeZ8fqn_yNxkUbDA3jpjcM0oGWNME-mTYs5bs=s48-rw"
-         alt="INDIE App">
-    <div class="header-text">
-      <h1>INDIE Savings Account</h1>
-      <p>Digital banking by IndusInd Bank</p>
-      <span class="badge">Zero Balance • Up to ₹250 Cashback</span>
+  <!-- HEADER -->
+  <div class="header">
+    <img src="https://play-lh.googleusercontent.com/qy1nK2i6PLrD5YDe5er0q827BfEz7fDeZ8fqn_yNxkUbDA3jpjcM0oGWNME-mTYs5bs=s48-rw" alt="INDIE App">
+    <div>
+      <h1>INDIE</h1>
+      <p>Savings Account & UPI App</p>
     </div>
   </div>
-</header>
 
-<div class="container">
-
+  <!-- OFFER DETAILS (SAME AS OTHER PAGES) -->
   <div class="card">
-    <h3>Refer & Earn</h3>
-    <div class="ref-row">
-      <span class="ref-code" id="refCode">slzklx4r</span>
-      <button class="copy-btn" onclick="copyCode()">Copy</button>
+    <h3>Offer Details</h3>
+
+    <div class="label">Referral Code</div>
+    <div class="row">
+      <span class="value" id="refCode">slzklx4r</span>
+      <button class="copy" onclick="copyText()">Copy</button>
     </div>
-    <p style="margin-top:8px;color:#cfcfcf;">
-      Signup bonus: <b>Up to ₹250 Cashback*</b>
-    </p>
+
+    <div class="label">Signup Bonus</div>
+    <div class="row">
+      <span class="value">Up to ₹250 Cashback*</span>
+    </div>
 
     <a class="btn" href="https://indieapp-referral.onelink.me/WEEF/slzklx4r">
       Open INDIE Account
     </a>
   </div>
 
+  <!-- ABOUT -->
   <div class="card">
     <h3>About INDIE</h3>
-    <p style="margin-top:8px;color:#e0e0e0;">
-      INDIE Savings Account ek zero-balance digital bank account hai
-      jo IndusInd Bank ke dwara offer kiya jata hai.
+    <p>
+      INDIE ek digital <b>Savings Account & UPI banking app</b> hai
+      jo IndusInd Bank ke dwara offer kiya jata hai. Isse daily
+      banking, payments aur account management hota hai.
     </p>
   </div>
 
+  <!-- FEATURES -->
   <div class="card">
     <h3>Key Features</h3>
     <ul>
-      <li>Zero balance savings account</li>
-      <li>100% online account opening</li>
-      <li>UPI, Scan & Pay, bill payments</li>
-      <li>Virtual & physical debit card</li>
+      <li>Digital savings account</li>
+      <li>UPI payments & scan to pay</li>
+      <li>Send & receive money instantly</li>
+      <li>Debit card support</li>
+      <li>Secure banking by IndusInd Bank</li>
+    </ul>
+  </div>
+
+  <!-- ELIGIBILITY -->
+  <div class="card">
+    <h3>Eligibility</h3>
+    <ul>
+      <li>Indian resident</li>
+      <li>Valid Aadhaar & PAN</li>
+      <li>Smartphone with internet</li>
+    </ul>
+  </div>
+
+  <!-- HOW TO OPEN -->
+  <div class="card">
+    <h3>How to Open Account</h3>
+    <ul>
+      <li>INDIE app download karein</li>
+      <li>Mobile number verify karein</li>
+      <li>KYC complete karein</li>
+      <li>Account activate ho jayega</li>
     </ul>
   </div>
 
@@ -198,19 +217,12 @@ ul li{
 
 </div>
 
-</div>
-
 <script>
-function copyCode(){
-  const t = document.getElementById("refCode").innerText;
-  const i = document.createElement("input");
-  i.value = t;
-  document.body.appendChild(i);
-  i.select();
-  i.setSelectionRange(0,99999);
-  document.execCommand("copy");
-  document.body.removeChild(i);
-  alert("Referral code copied!");
+function copyText(){
+  navigator.clipboard.writeText(
+    document.getElementById("refCode").innerText
+  );
+  alert("Referral code copied");
 }
 </script>
 
