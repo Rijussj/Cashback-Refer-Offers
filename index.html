@@ -1,3 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cashback & Refer Offers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO -->
+<meta name="description" content="Best cashback and refer & earn offers from trusted apps like Paytm and PhonePe.">
+<meta name="keywords" content="cashback offers, refer and earn, Paytm referral, PhonePe referral">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background:
+    radial-gradient(circle at top,#1a73e8 0%,transparent 45%),
+    radial-gradient(circle at bottom,#00c6ff 0%,transparent 45%),
+    #0b0f1a;
+  color:#fff;
+}
+
+/* Header */
+header{
+  text-align:center;
+  padding:60px 20px 40px;
+}
+header h1{
+  font-size:34px;
+  font-weight:700;
+}
+header p{
+  margin-top:10px;
+  opacity:.85;
+}
+
+/* Layout */
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:20px;
+}
+
+/* Glass Card */
+.card{
+  background:rgba(255,255,255,0.14);
+  backdrop-filter:blur(18px);
+  border-radius:26px;
+  padding:22px;
+  margin-bottom:22px;
+  border:1px solid rgba(255,255,255,0.25);
+  box-shadow:0 20px 40px rgba(0,0,0,0.35);
+}
+
+/* App Row */
 .app{
   display:flex;
   align-items:center;
@@ -5,19 +68,23 @@
   gap:16px;
 }
 
+/* Left */
 .app-left{
   display:flex;
   align-items:center;
-  gap:12px;
+  gap:14px;
 }
 
 .app-icon{
-  width:48px;
-  height:48px;
-  border-radius:12px;
+  width:52px;
+  height:52px;
+  border-radius:14px;
   background:#fff;
 }
 
+.app-left h3{
+  font-size:20px;
+}
 .badge{
   display:inline-block;
   margin-top:6px;
@@ -27,3 +94,81 @@
   background:rgba(0,198,255,.25);
   color:#cfefff;
 }
+
+/* Button */
+.btn{
+  padding:14px 22px;
+  border-radius:16px;
+  background:linear-gradient(135deg,#00c6ff,#0072ff);
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  box-shadow:0 12px 30px rgba(0,114,255,.5);
+  transition:.3s;
+}
+.btn:hover{
+  transform:translateY(-3px) scale(1.03);
+}
+
+/* Footer */
+footer{
+  text-align:center;
+  padding:30px 15px;
+  font-size:13px;
+  opacity:.6;
+}
+
+/* Mobile */
+@media(max-width:768px){
+  header h1{font-size:28px;}
+  .app{flex-direction:column;align-items:flex-start;}
+  .btn{width:100%;text-align:center;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Cashback & Refer Offers</h1>
+  <p>Earn rewards from trusted Indian apps</p>
+</header>
+
+<div class="container">
+
+  <!-- PAYTM -->
+  <div class="card">
+    <div class="app">
+      <div class="app-left">
+        <img class="app-icon" src="https://play-lh.googleusercontent.com/WDGsMRuVENnZPEpV4DEaXw12qtMY3em85xpmZqcXzeh0iT_eXFtAU9VUj-Z7xNQQd5DMqrkKSs9D0qbI1rlt=s48-rw" alt="Paytm App">
+        <div>
+          <h3>Paytm</h3>
+          <span class="badge">Signup Bonus • Up to ₹100</span>
+        </div>
+      </div>
+      <a class="btn" href="paytm.html">View Offer</a>
+    </div>
+  </div>
+
+  <!-- PHONEPE -->
+  <div class="card">
+    <div class="app">
+      <div class="app-left">
+        <img class="app-icon" src="https://play-lh.googleusercontent.com/6iyA2zVz5PyyMjK5SIxdUhrb7oh9cYVXJ93q6DZkmx07Er1o90PXYeo6mzL4VC2Gj9s=w240-h480-rw" alt="PhonePe App">
+        <div>
+          <h3>PhonePe</h3>
+          <span class="badge">Rewards & Cashback</span>
+        </div>
+      </div>
+      <a class="btn" href="phonepe.html">View Offer</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+© 2026 Cashback & Refer Offers • Not affiliated with Paytm or PhonePe
+</footer>
+
+</body>
+</html>
