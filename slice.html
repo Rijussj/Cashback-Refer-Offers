@@ -8,18 +8,19 @@
 <meta name="description" content="Join Slice app using referral code SAIKH68428 and earn rewards.">
 
 <style>
-/* ===== GLOBAL RESET ===== */
+/* ===== PAYTM-LIKE BG (BOTTOM STYLE) ===== */
 html, body{
   margin:0;
   padding:0;
   min-height:100vh;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ===== SAME BG AS OTHER APPS ===== */
 body{
   background:
-    linear-gradient(180deg, #0f1430 0%, #0b0f1a 100%);
+    radial-gradient(circle at bottom, #00c6ff 0%, transparent 45%),
+    radial-gradient(circle at top, #1a73e8 0%, transparent 45%),
+    #0b0f1a;
   color:#ffffff;
 }
 
@@ -35,9 +36,9 @@ body{
   display:flex;
   align-items:center;
   gap:15px;
-  background:#12183a;
+  background:rgba(255,255,255,0.08);
   padding:20px;
-  border-radius:14px;
+  border-radius:16px;
 }
 .header img{
   width:56px;
@@ -51,17 +52,17 @@ body{
 }
 .header p{
   margin-top:6px;
-  color:#cfd6ff;
+  color:#cfefff;
   font-size:14px;
 }
 
 /* ===== CARD ===== */
 .card{
-  background:#151b3d;
-  border:1px solid #232b63;
-  border-radius:14px;
+  background:rgba(255,255,255,0.10);
+  border:1px solid rgba(255,255,255,0.18);
+  border-radius:18px;
   padding:20px;
-  margin-top:20px;
+  margin-top:22px;
 }
 
 /* ===== REFERRAL ===== */
@@ -72,16 +73,16 @@ body{
   margin-top:10px;
 }
 .code{
-  background:#1e265c;
-  padding:8px 12px;
-  border-radius:8px;
+  background:rgba(0,0,0,0.35);
+  padding:10px 14px;
+  border-radius:10px;
   font-weight:bold;
 }
 .copy{
-  padding:8px 12px;
-  background:#2a6bff;
+  padding:10px 14px;
+  background:linear-gradient(135deg,#00c6ff,#0072ff);
   border:none;
-  border-radius:8px;
+  border-radius:10px;
   color:#fff;
   cursor:pointer;
 }
@@ -89,12 +90,13 @@ body{
 /* ===== BUTTON ===== */
 .btn{
   display:inline-block;
-  margin-top:15px;
-  padding:12px 18px;
-  background:#2a6bff;
+  margin-top:18px;
+  padding:14px 22px;
+  background:linear-gradient(135deg,#00c6ff,#0072ff);
   color:#fff;
   text-decoration:none;
-  border-radius:10px;
+  border-radius:14px;
+  font-weight:600;
 }
 
 /* ===== LIST ===== */
@@ -102,15 +104,15 @@ ul{
   margin-left:18px;
 }
 ul li{
-  margin-bottom:6px;
-  color:#e0e4ff;
+  margin-bottom:8px;
+  color:#e9f6ff;
 }
 
 /* ===== BACK ===== */
 .back{
   display:block;
-  margin-top:25px;
-  color:#9aa8ff;
+  margin-top:28px;
+  color:#9fdcff;
   text-decoration:none;
   font-size:14px;
 }
@@ -148,9 +150,11 @@ ul li{
       <button class="copy" onclick="copyCode()">Copy</button>
     </div>
 
-    <p style="margin-top:12px;">Referral Link:</p>
+    <p style="margin-top:14px;">Referral Link:</p>
     <div class="row">
-      <span class="code" id="refLink">https://t.sliceit.com/s?c=baZ5iS1&ic=SAIKH68428</span>
+      <span class="code" id="refLink">
+        https://t.sliceit.com/s?c=baZ5iS1&ic=SAIKH68428
+      </span>
       <button class="copy" onclick="copyLink()">Copy</button>
     </div>
 
@@ -163,9 +167,9 @@ ul li{
   <div class="card">
     <h3>About Slice</h3>
     <p>
-      Slice ek credit & pay-later app hai jisme aap
-      instant credit, easy EMI aur smart payments
-      ka use kar sakte ho.
+      Slice ek popular credit & pay-later app hai jisme aap
+      instant credit, easy EMI aur smart payments ka use
+      kar sakte ho.
     </p>
   </div>
 
@@ -190,7 +194,9 @@ function copyCode(){
   alert("Referral code copied");
 }
 function copyLink(){
-  navigator.clipboard.writeText("https://t.sliceit.com/s?c=baZ5iS1&ic=SAIKH68428");
+  navigator.clipboard.writeText(
+    "https://t.sliceit.com/s?c=baZ5iS1&ic=SAIKH68428"
+  );
   alert("Referral link copied");
 }
 </script>
