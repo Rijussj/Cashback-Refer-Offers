@@ -5,147 +5,174 @@
 <title>Cashback & Refer Offers</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- SEO -->
-<meta name="description" content="Best cashback and refer & earn offers from trusted Indian apps like Paytm, PhonePe and more.">
-<meta name="keywords" content="cashback offers, refer and earn, earning apps india">
+<meta name="description" content="Earn money with best cashback and refer & earn apps in India.">
+<meta name="keywords" content="cashback, refer earn, earning apps india">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Segoe UI', sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
 }
+
 body{
-    min-height:100vh;
-    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-    color:#fff;
+  min-height:100vh;
+  background:
+    radial-gradient(circle at top,#1a73e8 0%,transparent 40%),
+    radial-gradient(circle at bottom,#00c6ff 0%,transparent 40%),
+    #0b0f1a;
+  color:#fff;
 }
 
 /* Header */
 header{
-    padding:25px;
-    text-align:center;
+  padding:60px 20px 40px;
+  text-align:center;
 }
 header h1{
-    font-size:28px;
-    font-weight:700;
+  font-size:34px;
+  font-weight:700;
 }
 header p{
-    opacity:0.8;
-    margin-top:5px;
+  margin-top:10px;
+  opacity:.85;
+  font-size:16px;
 }
 
 /* Container */
 .container{
-    padding:20px;
-    max-width:1100px;
-    margin:auto;
+  max-width:1100px;
+  margin:auto;
+  padding:20px;
 }
 
 /* Glass Card */
 .card{
-    background: rgba(255,255,255,0.12);
-    backdrop-filter: blur(15px);
-    border-radius:18px;
-    padding:20px;
-    margin-bottom:20px;
-    box-shadow:0 8px 32px rgba(0,0,0,0.25);
-    border:1px solid rgba(255,255,255,0.18);
+  background:rgba(255,255,255,0.12);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  border-radius:22px;
+  padding:22px;
+  margin-bottom:22px;
+  border:1px solid rgba(255,255,255,0.2);
+  box-shadow:0 20px 40px rgba(0,0,0,.35);
 }
 
-/* App Card */
+/* App Row */
 .app{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    flex-wrap:wrap;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  flex-wrap:wrap;
 }
-.app-info{
-    max-width:70%;
+
+.icon{
+  width:54px;
+  height:54px;
+  border-radius:14px;
+  background:linear-gradient(135deg,#00c6ff,#0072ff);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  font-size:18px;
 }
-.app-info h3{
-    font-size:20px;
+
+.info{
+  flex:1;
 }
-.app-info p{
-    opacity:0.85;
-    margin-top:6px;
+.info h3{
+  font-size:20px;
+  font-weight:600;
+}
+.info p{
+  margin-top:6px;
+  opacity:.8;
+  font-size:14px;
 }
 
 /* Button */
 .btn{
-    background: linear-gradient(135deg,#00c6ff,#0072ff);
-    color:#fff;
-    padding:12px 18px;
-    border-radius:12px;
-    text-decoration:none;
-    font-weight:600;
-    transition:0.3s;
+  padding:14px 22px;
+  border-radius:14px;
+  background:linear-gradient(135deg,#00c6ff,#0072ff);
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  box-shadow:0 10px 25px rgba(0,114,255,.5);
+  transition:.3s;
 }
 .btn:hover{
-    transform:scale(1.05);
+  transform:translateY(-3px) scale(1.03);
 }
 
 /* Footer */
 footer{
-    text-align:center;
-    padding:20px;
-    opacity:0.6;
-    font-size:14px;
+  margin-top:40px;
+  padding:25px;
+  text-align:center;
+  font-size:13px;
+  opacity:.6;
 }
 
 /* Mobile */
 @media(max-width:768px){
-    .app-info{
-        max-width:100%;
-        margin-bottom:15px;
-    }
+  header h1{font-size:28px;}
+  .app{flex-direction:column;align-items:flex-start;}
+  .btn{width:100%;text-align:center;}
 }
 </style>
 </head>
 <body>
 
 <header>
-<h1>Cashback & Refer Offers</h1>
-<p>Best Earning Apps in India</p>
+  <h1>Cashback & Refer Offers</h1>
+  <p>Earn money from trusted Indian apps</p>
 </header>
 
 <div class="container">
 
-<div class="card">
-<div class="app">
-<div class="app-info">
-<h3>Paytm – Refer & Earn</h3>
-<p>Invite friends and earn cashback directly in your wallet.</p>
-</div>
-<a class="btn" href="https://play.google.com/store/apps/details?id=net.one97.paytm">Get App</a>
-</div>
-</div>
+  <div class="card">
+    <div class="app">
+      <div class="icon">P</div>
+      <div class="info">
+        <h3>Paytm – Refer & Earn</h3>
+        <p>Invite friends and get instant cashback in wallet.</p>
+      </div>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=net.one97.paytm">Get App</a>
+    </div>
+  </div>
 
-<div class="card">
-<div class="app">
-<div class="app-info">
-<h3>PhonePe – Cashback Rewards</h3>
-<p>UPI payments, scratch cards and instant rewards.</p>
-</div>
-<a class="btn" href="https://play.google.com/store/apps/details?id=com.phonepe.app">Get App</a>
-</div>
-</div>
+  <div class="card">
+    <div class="app">
+      <div class="icon">₹</div>
+      <div class="info">
+        <h3>PhonePe – Cashback Rewards</h3>
+        <p>UPI payments, scratch cards & daily rewards.</p>
+      </div>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.phonepe.app">Get App</a>
+    </div>
+  </div>
 
-<div class="card">
-<div class="app">
-<div class="app-info">
-<h3>Google Pay – Rewards</h3>
-<p>Pay bills, recharge and earn rewards easily.</p>
-</div>
-<a class="btn" href="https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.paisa.user">Get App</a>
-</div>
-</div>
+  <div class="card">
+    <div class="app">
+      <div class="icon">G</div>
+      <div class="info">
+        <h3>Google Pay – Rewards</h3>
+        <p>Pay bills, recharge & earn rewards easily.</p>
+      </div>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.paisa.user">Get App</a>
+    </div>
+  </div>
 
 </div>
 
 <footer>
-© 2026 Cashback & Refer Offers | Not affiliated with any app
+© 2026 Cashback & Refer Offers • Not affiliated with Paytm / PhonePe
 </footer>
 
 </body>
