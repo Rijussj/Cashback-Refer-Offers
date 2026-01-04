@@ -5,110 +5,109 @@
 <title>Cashback & Refer Offers</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Best cashback and refer & earn offers from Paytm, PhonePe and INDIE.">
-<meta name="keywords" content="cashback, refer and earn, Paytm, PhonePe, INDIE">
+<meta name="description" content="Best cashback & refer offers from Paytm, INDIE, Slice and other popular apps.">
 
 <style>
-*{
-  box-sizing:border-box;
+/* ===== PAYTM STYLE BACKGROUND ===== */
+html, body{
   margin:0;
   padding:0;
-  font-family:Arial, Helvetica, sans-serif;
+  min-height:100vh;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
-  background:#0b0f1a;
+  background:
+    radial-gradient(circle at bottom, #00c6ff 0%, transparent 45%),
+    radial-gradient(circle at top, #1a73e8 0%, transparent 45%),
+    #0b0f1a;
   color:#ffffff;
 }
 
-/* Header */
+/* ===== HEADER ===== */
 header{
-  padding:30px 20px;
   text-align:center;
-  background:#11162a;
+  padding:40px 15px 30px;
 }
 header h1{
-  font-size:28px;
+  font-size:30px;
+  margin:0;
 }
 header p{
-  margin-top:8px;
-  color:#cfcfcf;
+  margin-top:10px;
+  color:#cfefff;
+  font-size:14px;
 }
 
-/* Container */
+/* ===== CONTAINER ===== */
 .container{
-  max-width:900px;
-  margin:20px auto;
-  padding:15px;
+  max-width:1000px;
+  margin:auto;
+  padding:10px 15px 40px;
 }
 
-/* Card */
+/* ===== CARD ===== */
 .card{
-  background:#151b2f;
-  border-radius:12px;
-  padding:15px;
-  margin-bottom:15px;
-  border:1px solid #22284a;
+  background:rgba(255,255,255,0.10);
+  border:1px solid rgba(255,255,255,0.18);
+  border-radius:18px;
+  padding:18px;
+  margin-bottom:18px;
 }
 
-/* App Row */
+/* ===== APP ROW ===== */
 .app{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:12px;
+  gap:15px;
 }
-
 .app-left{
   display:flex;
   align-items:center;
-  gap:12px;
+  gap:14px;
 }
-
 .app-icon{
   width:48px;
   height:48px;
-  border-radius:10px;
-  background:#ffffff;
+  border-radius:12px;
+  background:#fff;
 }
-
-/* Text */
 .app-left h3{
-  font-size:18px;
+  margin:0;
+  font-size:20px;
 }
 .badge{
   display:inline-block;
-  margin-top:5px;
-  padding:4px 8px;
+  margin-top:6px;
+  padding:5px 10px;
   font-size:12px;
-  border-radius:10px;
-  background:#243b6b;
-  color:#dbe8ff;
+  border-radius:12px;
+  background:rgba(0,198,255,.25);
+  color:#e9f6ff;
 }
 
-/* Button */
+/* ===== BUTTON ===== */
 .btn{
-  padding:10px 16px;
-  background:#1f6bff;
+  padding:12px 20px;
+  background:linear-gradient(135deg,#00c6ff,#0072ff);
   color:#fff;
   text-decoration:none;
-  border-radius:10px;
+  border-radius:14px;
+  font-weight:600;
   font-size:14px;
 }
-.btn:hover{
-  background:#3b82ff;
-}
 
-/* Footer */
+/* ===== FOOTER ===== */
 footer{
   text-align:center;
-  padding:20px;
+  padding:25px 15px;
   font-size:12px;
-  color:#999;
+  color:#bcdcff;
 }
 
-/* Mobile */
-@media (max-width:600px){
+/* ===== MOBILE ===== */
+@media(max-width:650px){
   .app{
     flex-direction:column;
     align-items:flex-start;
@@ -116,7 +115,7 @@ footer{
   .btn{
     width:100%;
     text-align:center;
-    margin-top:10px;
+    margin-top:12px;
   }
 }
 </style>
@@ -126,7 +125,7 @@ footer{
 
 <header>
   <h1>Cashback & Refer Offers</h1>
-  <p>Earn rewards from trusted Indian apps</p>
+  <p>Earn rewards using trusted apps</p>
 </header>
 
 <div class="container">
@@ -136,30 +135,14 @@ footer{
     <div class="app">
       <div class="app-left">
         <img class="app-icon"
-             src="https://play-lh.googleusercontent.com/WDGsMRuVENnZPEpV4DEaXw12qtMY3em85xpmZqcXzeh0iT_eXFtAU9VUj-Z7xNQQd5DMqrkKSs9D0qbI1rlt=s48-rw"
-             alt="Paytm">
+          src="https://play-lh.googleusercontent.com/WDGsMRuVENnZPEpV4DEaXw12qtMY3em85xpmZqcXzeh0iT_eXFtAU9VUj-Z7xNQQd5DMqrkKSs9D0qbI1rlt=s48-rw"
+          alt="Paytm">
         <div>
           <h3>Paytm</h3>
-          <span class="badge">Signup Bonus • Up to ₹100</span>
+          <span class="badge">Refer & Earn</span>
         </div>
       </div>
       <a class="btn" href="paytm.html">View Offer</a>
-    </div>
-  </div>
-
-  <!-- PHONEPE -->
-  <div class="card">
-    <div class="app">
-      <div class="app-left">
-        <img class="app-icon"
-             src="https://play-lh.googleusercontent.com/6iyA2zVz5PyyMjK5SIxdUhrb7oh9cYVXJ93q6DZkmx07Er1o90PXYeo6mzL4VC2Gj9s=w240-h480-rw"
-             alt="PhonePe">
-        <div>
-          <h3>PhonePe</h3>
-          <span class="badge">Rewards & Cashback</span>
-        </div>
-      </div>
-      <a class="btn" href="phonepe.html">View Offer</a>
     </div>
   </div>
 
@@ -168,14 +151,30 @@ footer{
     <div class="app">
       <div class="app-left">
         <img class="app-icon"
-             src="https://play-lh.googleusercontent.com/qy1nK2i6PLrD5YDe5er0q827BfEz7fDeZ8fqn_yNxkUbDA3jpjcM0oGWNME-mTYs5bs=s48-rw"
-             alt="INDIE">
+          src="https://play-lh.googleusercontent.com/qy1nK2i6PLrD5YDe5er0q827BfEz7fDeZ8fqn_yNxkUbDA3jpjcM0oGWNME-mTYs5bs=s48-rw"
+          alt="INDIE">
         <div>
           <h3>INDIE</h3>
-          <span class="badge">Zero Balance • Up to ₹250</span>
+          <span class="badge">Savings Account</span>
         </div>
       </div>
       <a class="btn" href="indie.html">View Offer</a>
+    </div>
+  </div>
+
+  <!-- SLICE -->
+  <div class="card">
+    <div class="app">
+      <div class="app-left">
+        <img class="app-icon"
+          src="https://play-lh.googleusercontent.com/FepA9QbIZEBnW7N3u52lpfc6YqyTiioXEodAW6orEpBBoh3aQLE9JSlT3s-kVUdYx_DY=w240-h480-rw"
+          alt="Slice">
+        <div>
+          <h3>Slice</h3>
+          <span class="badge">Savings Account & UPI</span>
+        </div>
+      </div>
+      <a class="btn" href="slice.html">View Offer</a>
     </div>
   </div>
 
@@ -183,7 +182,7 @@ footer{
 
 <footer>
 © 2026 Cashback & Refer Offers<br>
-Not affiliated with Paytm, PhonePe or IndusInd Bank
+This website is for informational purposes only.
 </footer>
 
 </body>
