@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>PhonePe – Refer & Earn</title>
+<title>PhonePe – UPI & Payments | Refer & Earn</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="PhonePe UPI app refer and earn page.">
+<meta name="description" content="PhonePe UPI & payments app. Refer & Earn offers with PhonePe.">
 
 <style>
 /* ===== GLOBAL RESET ===== */
@@ -75,19 +75,6 @@ body{
   font-size:14px;
   color:#cfefff;
 }
-
-/* 🔴 MOBILE LINK FIX */
-.value{
-  background:rgba(0,0,0,0.35);
-  padding:10px 14px;
-  border-radius:10px;
-  font-weight:bold;
-
-  word-break: break-all;
-  overflow-wrap: anywhere;
-}
-
-/* ROW */
 .row{
   display:flex;
   flex-wrap:wrap;
@@ -95,7 +82,16 @@ body{
   margin-top:8px;
 }
 
-/* BUTTONS */
+/* 🔴 MOBILE LINK FIX */
+.value{
+  background:rgba(0,0,0,0.35);
+  padding:10px 14px;
+  border-radius:10px;
+  font-weight:bold;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
 .copy{
   padding:10px 14px;
   background:linear-gradient(135deg,#00c6ff,#0072ff);
@@ -105,6 +101,7 @@ body{
   cursor:pointer;
 }
 
+/* ===== BUTTON ===== */
 .btn{
   display:inline-block;
   margin-top:20px;
@@ -116,7 +113,16 @@ body{
   font-weight:600;
 }
 
-/* BACK */
+/* ===== LIST ===== */
+ul{
+  margin-left:18px;
+}
+ul li{
+  margin-bottom:8px;
+  color:#e9f6ff;
+}
+
+/* ===== BACK ===== */
 .back{
   display:block;
   margin-top:28px;
@@ -125,7 +131,7 @@ body{
   font-size:14px;
 }
 
-/* MOBILE */
+/* ===== MOBILE ===== */
 @media(max-width:600px){
   .header{
     flex-direction:column;
@@ -148,7 +154,7 @@ body{
     </div>
   </div>
 
-  <!-- OFFER DETAILS -->
+  <!-- OFFER DETAILS (TOP – SAME AS OTHER APPS) -->
   <div class="card">
     <h3>Offer Details</h3>
 
@@ -158,17 +164,63 @@ body{
       <button class="copy" onclick="copyText('refCode')">Copy</button>
     </div>
 
+    <div class="label">Signup Bonus</div>
+    <div class="row">
+      <span class="value">As per PhonePe offer*</span>
+    </div>
+
     <div class="label">Referral Link</div>
     <div class="row">
-      <span class="value" id="refLink">
-        https://phon.pe/vxcxkjhm
-      </span>
+      <span class="value" id="refLink">https://phon.pe/vxcxkjhm</span>
       <button class="copy" onclick="copyText('refLink')">Copy</button>
     </div>
 
     <a class="btn" href="https://phon.pe/vxcxkjhm">
       Download PhonePe App
     </a>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="card">
+    <h3>About PhonePe</h3>
+    <p>
+      PhonePe ek popular <b>UPI & digital payments app</b> hai jisse
+      aap instant money transfer, QR scan payments aur daily
+      transactions easily kar sakte ho.
+    </p>
+  </div>
+
+  <!-- FEATURES -->
+  <div class="card">
+    <h3>Key Features</h3>
+    <ul>
+      <li>UPI scan & pay</li>
+      <li>Send & receive money instantly</li>
+      <li>Mobile recharges & bill payments</li>
+      <li>Bank account linking</li>
+      <li>Secure & fast transactions</li>
+    </ul>
+  </div>
+
+  <!-- ELIGIBILITY -->
+  <div class="card">
+    <h3>Eligibility</h3>
+    <ul>
+      <li>Indian resident</li>
+      <li>Active mobile number</li>
+      <li>Linked bank account</li>
+    </ul>
+  </div>
+
+  <!-- HOW TO USE -->
+  <div class="card">
+    <h3>How to Use PhonePe?</h3>
+    <ul>
+      <li>PhonePe app download karein</li>
+      <li>Mobile number verify karein</li>
+      <li>Bank account link karein</li>
+      <li>UPI set karke payments start karein</li>
+    </ul>
   </div>
 
   <a class="back" href="index.html">← Back to Home</a>
