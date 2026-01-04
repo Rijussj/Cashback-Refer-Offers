@@ -1,37 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Slice Test</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+<meta charset="UTF-8">
+<title>Slice Refer & Earn</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<body style="
+<meta name="description" content="Join Slice app using referral code SAIKH68428 and earn rewards.">
+<meta name="keywords" content="Slice referral code, Slice refer and earn">
+
+<style>
+/* GUARANTEED BG SETUP */
+html, body{
   margin:0;
+  padding:0;
   min-height:100vh;
   background:#0b0f1a;
-  color:white;
-  font-family:Arial;
-">
+  color:#ffffff;
+  font-family:Arial, Helvetica, sans-serif;
+}
 
-  <div style="padding:40px;">
-    <h1>Slice Page Working</h1>
-    <p>If you see this text on a DARK background, BG is WORKING.</p>
+/* Layout */
+.wrapper{
+  max-width:900px;
+  margin:auto;
+  padding:30px 15px;
+}
 
-    <p><b>Referral Code:</b> SAIKH68428</p>
-    <p><b>Referral Link:</b><br>
-    https://t.sliceit.com/s?c=baZ5iS1&ic=SAIKH68428</p>
+/* Header */
+.header{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  background:#11162a;
+  padding:20px;
+  border-radius:14px;
+}
+.header img{
+  width:56px;
+  height:56px;
+  border-radius:12px;
+  background:#fff;
+}
+.header h1{
+  font-size:24px;
+  margin:0;
+}
+.header p{
+  margin:6px 0 0;
+  color:#cfcfcf;
+  font-size:14px;
+}
 
-    <a href="index.html" style="
-      display:inline-block;
-      margin-top:20px;
-      padding:12px 18px;
-      background:#1f6bff;
-      color:white;
-      text-decoration:none;
-      border-radius:8px;
-    ">Back to Home</a>
+/* Card */
+.card{
+  background:#151b2f;
+  border:1px solid #22284a;
+  border-radius:14px;
+  padding:20px;
+  margin-top:20px;
+}
+
+/* Referral */
+.row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:10px;
+}
+.code{
+  background:#1e2542;
+  padding:8px 12px;
+  border-radius:8px;
+  font-weight:bold;
+}
+.copy{
+  padding:8px 12px;
+  background:#1f6bff;
+  border:none;
+  border-radius:8px;
+  color:#fff;
+  cursor:pointer;
+}
+
+/* Button */
+.btn{
+  display:inline-block;
+  margin-top:15px;
+  padding:12px 18px;
+  background:#1f6bff;
+  color:#fff;
+  text-decoration:none;
+  border-radius:10px;
+}
+
+/* Text */
+ul{
+  margin-left:18px;
+}
+ul li{
+  margin-bottom:6px;
+  color:#e0e0e0;
+}
+
+/* Back */
+.back{
+  display:block;
+  margin-top:25px;
+  color:#9aa8ff;
+  text-decoration:none;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <div class="header">
+    <img src="https://play-lh.googleusercontent.com/FepA9QbIZEBnW7N3u52lpfc6YqyTiioXEodAW6orEpBBoh3aQLE9JSlT3s-kVUdYx_DY=w240-h480-rw" alt="Slice App">
+    <div>
+      <h1>Slice Refer & Earn</h1>
+      <p>Smart credit & pay-later app</p>
+    </div>
   </div>
+
+  <!-- REFER -->
+  <div class="card">
+    <h3>Referral Details</h3>
+
+    <p>Referral Code:</p>
+    <div class="row">
+      <span class="code" id="refCode">SAIKH68428</span>
+      <button class="copy" onclick="copyCode()">Copy</button>
+    </div>
+
+    <p style="margin-top:12px;">Referral Link:</p>
+    <div class="row">
+      <span class="code" id="refLink">https://t.sliceit.com/s?c=baZ5iS1&ic=SAIKH68428</span>
+      <button class="copy" onclick="copyLink()">Copy</button>
+    </div>
+
+    <a class="btn" href="https://t.sliceit.com/s?c=baZ5iS1&ic=SAIKH68428">
+      Join Slice & Earn
+    </a>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="card">
+    <h3>About Slice</h3>
+    <p>
+      Slice ek popular credit & pay-later app hai jisme aap
+      instant credit, easy EMI aur smart payments ka use
+      kar sakte ho.
+    </p>
+  </div>
+
+  <!-- FEATURES -->
+  <div class="card">
+    <h3>Key Features</h3>
+    <ul>
+      <li>Instant credit access</li>
+      <li>No-cost EMI options</li>
+      <li>Easy online & offline payments</li>
+      <li>User-friendly mobile app</li>
+    </ul>
+  </div>
+
+  <a class="back" href="index.html">← Back to Home</a>
+
+</div>
+
+<script>
+function copyCode(){
+  navigator.clipboard.writeText("SAIKH68428");
+  alert("Referral code copied");
+}
+function copyLink(){
+  navigator.clipboard.writeText("https://t.sliceit.com/s?c=baZ5iS1&ic=SAIKH68428");
+  alert("Referral link copied");
+}
+</script>
 
 </body>
 </html>
