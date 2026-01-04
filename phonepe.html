@@ -2,244 +2,186 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>PhonePe Refer & Earn – Signup Bonus</title>
+<title>PhonePe – Refer & Earn</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- SEO -->
-<meta name="description" content="Use PhonePe referral link and earn signup rewards. Explore how to earn with PhonePe referrals and cashback.">
-<meta name="keywords" content="PhonePe referral link, PhonePe signup bonus, PhonePe cashback, earn money apps">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<meta name="description" content="PhonePe UPI app refer and earn page.">
 
 <style>
+/* ===== GLOBAL RESET ===== */
 *{
+  box-sizing:border-box;
   margin:0;
   padding:0;
-  box-sizing:border-box;
-  font-family:'Inter',sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+html, body{
   min-height:100vh;
+}
+
+/* ===== PAYTM STYLE BACKGROUND ===== */
+body{
   background:
-    radial-gradient(circle at top,#1a73e8 0%,transparent 45%),
-    radial-gradient(circle at bottom,#00c6ff 0%,transparent 45%),
+    radial-gradient(circle at bottom, #00c6ff 0%, transparent 45%),
+    radial-gradient(circle at top, #1a73e8 0%, transparent 45%),
     #0b0f1a;
-  color:#fff;
+  color:#ffffff;
 }
 
-.container{
-  max-width:960px;
+/* ===== LAYOUT ===== */
+.wrapper{
+  max-width:900px;
   margin:auto;
-  padding:40px 20px;
+  padding:30px 15px;
 }
 
-.card{
-  background:rgba(255,255,255,0.14);
-  backdrop-filter:blur(18px);
-  border-radius:28px;
-  padding:36px;
-  border:1px solid rgba(255,255,255,0.25);
-  box-shadow:0 25px 50px rgba(0,0,0,0.45);
-}
-
-/* Header */
-.app-header{
+/* ===== HEADER ===== */
+.header{
   display:flex;
   align-items:center;
-  gap:20px;
-}
-
-/* Icon */
-.logo{
-  width:80px;
-  height:80px;
-  border-radius:22px;
-  background:rgba(255,255,255,0.15);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-.logo img{
-  width:48px;
-  height:48px;
-  border-radius:12px;
-}
-
-/* Title */
-.app-title h1{font-size:28px;}
-.app-title p{opacity:.8;margin-top:6px;}
-.badge{
-  display:inline-block;
-  margin-top:8px;
-  padding:6px 12px;
-  font-size:13px;
-  border-radius:12px;
-  background:rgba(0,198,255,.25);
-}
-
-/* Highlight */
-.highlight{
-  background:rgba(0,0,0,.25);
-  border-radius:18px;
+  gap:15px;
+  background:rgba(255,255,255,0.08);
   padding:20px;
-  margin-top:25px;
-  border:1px dashed rgba(255,255,255,.25);
+  border-radius:16px;
+}
+.header img{
+  width:56px;
+  height:56px;
+  border-radius:12px;
+  background:#fff;
+}
+.header h1{
+  font-size:24px;
+}
+.header p{
+  margin-top:6px;
+  color:#cfefff;
+  font-size:14px;
 }
 
-/* Copy Box */
-.copy-box{
-  margin-top:10px;
-  display:flex;
-  align-items:center;
-  gap:10px;
+/* ===== CARD ===== */
+.card{
+  background:rgba(255,255,255,0.10);
+  border:1px solid rgba(255,255,255,0.18);
+  border-radius:18px;
+  padding:22px;
+  margin-top:22px;
 }
-.copy-box span{
+
+/* ===== INFO ===== */
+.label{
+  margin-top:14px;
+  font-size:14px;
+  color:#cfefff;
+}
+
+/* 🔴 IMPORTANT FIX HERE */
+.value{
+  background:rgba(0,0,0,0.35);
   padding:10px 14px;
-  border-radius:12px;
-  background:rgba(255,255,255,0.15);
-  font-weight:600;
-  letter-spacing:1px;
+  border-radius:10px;
+  font-weight:bold;
+
+  /* MOBILE LINK FIX */
+  word-break: break-all;
+  overflow-wrap: anywhere;
 }
-.copy-box button{
-  padding:10px 16px;
-  border-radius:12px;
-  border:none;
-  cursor:pointer;
-  font-weight:600;
+
+/* ROW */
+.row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:8px;
+}
+
+/* BUTTONS */
+.copy{
+  padding:10px 14px;
   background:linear-gradient(135deg,#00c6ff,#0072ff);
+  border:none;
+  border-radius:10px;
   color:#fff;
+  cursor:pointer;
 }
 
-/* Sections */
-.section{margin-top:30px;}
-.section h2{font-size:20px;margin-bottom:12px;}
-.section p{opacity:.85;line-height:1.7;}
-.section ul{margin-left:18px;}
-.section ul li{margin-bottom:8px;opacity:.9;}
-
-/* Button */
 .btn{
   display:inline-block;
-  margin-top:30px;
-  padding:18px 30px;
-  border-radius:18px;
+  margin-top:20px;
+  padding:14px 24px;
   background:linear-gradient(135deg,#00c6ff,#0072ff);
   color:#fff;
   text-decoration:none;
+  border-radius:14px;
   font-weight:600;
-  box-shadow:0 14px 35px rgba(0,114,255,.5);
 }
 
-/* Back */
+/* BACK */
 .back{
   display:block;
-  margin-top:25px;
-  font-size:14px;
-  color:#aaa;
+  margin-top:28px;
+  color:#9fdcff;
   text-decoration:none;
+  font-size:14px;
 }
 
-/* Mobile */
-@media(max-width:768px){
-  .app-header{flex-direction:column;align-items:flex-start;}
+/* MOBILE */
+@media(max-width:600px){
+  .header{
+    flex-direction:column;
+    align-items:flex-start;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
-<div class="card">
+<div class="wrapper">
 
-  <!-- Header -->
-  <div class="app-header">
-    <div class="logo">
-      <img src="https://play-lh.googleusercontent.com/6iyA2zVz5PyyMjK5SIxdUhrb7oh9cYVXJ93q6DZkmx07Er1o90PXYeo6mzL4VC2Gj9s=w240-h480-rw" alt="PhonePe App Icon">
-    </div>
-    <div class="app-title">
-      <h1>PhonePe Refer & Earn</h1>
-      <p>Cashback & rewards offers</p>
-      <span class="badge">Trusted UPI App</span>
+  <!-- HEADER -->
+  <div class="header">
+    <img src="https://play-lh.googleusercontent.com/6iyA2zVz5PyyMjK5SIxdUhrb7oh9cYVXJ93q6DZkmx07Er1o90PXYeo6mzL4VC2Gj9s=w240-h480-rw" alt="PhonePe">
+    <div>
+      <h1>PhonePe</h1>
+      <p>UPI & Payments App</p>
     </div>
   </div>
 
-  <!-- Referral Box -->
-  <div class="highlight">
-    <p><strong>Referral Link:</strong></p>
-    <div class="copy-box">
-      <span id="refCode">https://phon.pe/vxcxkjhm</span>
-      <button id="copyBtn" onclick="copyCode()">Copy</button>
+  <!-- OFFER -->
+  <div class="card">
+    <h3>Offer Details</h3>
+
+    <div class="label">Referral Code</div>
+    <div class="row">
+      <span class="value" id="refCode">DOWNLOAD FROM LINK</span>
+      <button class="copy" onclick="copyText('refCode')">Copy</button>
     </div>
-    <p style="margin-top:10px;">
-      <strong>Signup Bonus:</strong> Earn exciting rewards with PhonePe*
-    </p>
-  </div>
 
-  <!-- About -->
-  <div class="section">
-    <h2>About PhonePe</h2>
-    <p>
-      PhonePe ek popular Indian UPI app hai jisme money transfer, bill
-      payments, recharge aur cashback offers hotey hain. Aap PhonePe
-      ke referral program se rewards bhi earn kar sakte ho.
-    </p>
-  </div>
+    <div class="label">Referral Link</div>
+    <div class="row">
+      <span class="value" id="refLink">
+        https://phon.pe/vxcxkjhm
+      </span>
+      <button class="copy" onclick="copyText('refLink')">Copy</button>
+    </div>
 
-  <!-- Steps -->
-  <div class="section">
-    <h2>How to Earn?</h2>
-    <ul>
-      <li>Referral link se PhonePe app install karein</li>
-      <li>App open karke signup complete karein</li>
-      <li>First transactions / tasks complete karein</li>
-      <li>Rewards aapke wallet me milenge</li>
-    </ul>
+    <a class="btn" href="https://phon.pe/vxcxkjhm">
+      Download PhonePe App
+    </a>
   </div>
-
-  <!-- Terms -->
-  <div class="section">
-    <h2>Important Details</h2>
-    <ul>
-      <li>Offer valid for new users only</li>
-      <li>Rewards depend on PhonePe offer terms</li>
-      <li>Cashback amounts may change</li>
-    </ul>
-  </div>
-
-  <!-- CTA -->
-  <a class="btn" href="https://phon.pe/vxcxkjhm">
-    Join PhonePe & Earn Rewards
-  </a>
 
   <a class="back" href="index.html">← Back to Home</a>
 
 </div>
-</div>
 
-<!-- COPY SCRIPT -->
 <script>
-function copyCode(){
-  const codeText = document.getElementById("refCode").innerText;
-
-  const tempInput = document.createElement("input");
-  tempInput.value = codeText;
-  document.body.appendChild(tempInput);
-
-  tempInput.select();
-  tempInput.setSelectionRange(0,99999);
-  document.execCommand("copy");
-
-  document.body.removeChild(tempInput);
-
-  const btn = document.getElementById("copyBtn");
-  btn.innerText = "Copied ✓";
-  btn.style.background = "#28a745";
-
-  setTimeout(()=>{
-    btn.innerText = "Copy";
-    btn.style.background = "";
-  },2000);
+function copyText(id){
+  navigator.clipboard.writeText(
+    document.getElementById(id).innerText
+  );
+  alert("Copied");
 }
 </script>
 
