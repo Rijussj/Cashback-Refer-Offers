@@ -5,17 +5,22 @@
 <title>Cashback & Refer Offers</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Best cashback & refer offers from Paytm, INDIE, Slice and other popular apps.">
+<meta name="description" content="Best cashback & refer offers from Paytm, INDIE and Slice apps.">
 
 <style>
-/* ===== PAYTM STYLE BACKGROUND ===== */
-html, body{
+/* ===== GLOBAL RESET ===== */
+*{
+  box-sizing:border-box;
   margin:0;
   padding:0;
-  min-height:100vh;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html, body{
+  min-height:100vh;
+}
+
+/* ===== PAYTM STYLE BACKGROUND ===== */
 body{
   background:
     radial-gradient(circle at bottom, #00c6ff 0%, transparent 45%),
@@ -27,96 +32,109 @@ body{
 /* ===== HEADER ===== */
 header{
   text-align:center;
-  padding:40px 15px 30px;
+  padding:30px 15px 20px;
 }
 header h1{
-  font-size:30px;
-  margin:0;
+  font-size:26px;
 }
 header p{
-  margin-top:10px;
-  color:#cfefff;
+  margin-top:8px;
   font-size:14px;
+  color:#cfefff;
 }
 
 /* ===== CONTAINER ===== */
 .container{
   max-width:1000px;
   margin:auto;
-  padding:10px 15px 40px;
+  padding:10px 14px 30px;
 }
 
 /* ===== CARD ===== */
 .card{
   background:rgba(255,255,255,0.10);
   border:1px solid rgba(255,255,255,0.18);
-  border-radius:18px;
-  padding:18px;
-  margin-bottom:18px;
+  border-radius:16px;
+  padding:14px;
+  margin-bottom:14px;
 }
 
 /* ===== APP ROW ===== */
 .app{
   display:flex;
   align-items:center;
-  justify-content:space-between;
-  gap:15px;
+  gap:12px;
 }
+
+/* LEFT */
 .app-left{
   display:flex;
   align-items:center;
-  gap:14px;
+  gap:12px;
+  flex:1;
 }
+
 .app-icon{
-  width:48px;
-  height:48px;
-  border-radius:12px;
+  width:44px;
+  height:44px;
+  border-radius:10px;
   background:#fff;
+  flex-shrink:0;
 }
-.app-left h3{
-  margin:0;
-  font-size:20px;
+
+.app-info h3{
+  font-size:17px;
 }
 .badge{
   display:inline-block;
-  margin-top:6px;
-  padding:5px 10px;
-  font-size:12px;
-  border-radius:12px;
+  margin-top:4px;
+  padding:4px 8px;
+  font-size:11px;
+  border-radius:10px;
   background:rgba(0,198,255,.25);
   color:#e9f6ff;
 }
 
-/* ===== BUTTON ===== */
+/* BUTTON */
 .btn{
-  padding:12px 20px;
+  padding:10px 14px;
   background:linear-gradient(135deg,#00c6ff,#0072ff);
   color:#fff;
   text-decoration:none;
-  border-radius:14px;
+  border-radius:12px;
+  font-size:13px;
   font-weight:600;
-  font-size:14px;
+  white-space:nowrap;
 }
 
 /* ===== FOOTER ===== */
 footer{
   text-align:center;
-  padding:25px 15px;
+  padding:22px 12px;
   font-size:12px;
   color:#bcdcff;
 }
 
-/* ===== MOBILE ===== */
-@media(max-width:650px){
+/* ===== MOBILE FIX ===== */
+@media(max-width:600px){
+
   .app{
     flex-direction:column;
-    align-items:flex-start;
+    align-items:stretch;
   }
+
+  .app-left{
+    width:100%;
+  }
+
   .btn{
     width:100%;
     text-align:center;
-    margin-top:12px;
+    margin-top:10px;
+    padding:12px;
+    font-size:14px;
   }
+
 }
 </style>
 </head>
@@ -137,7 +155,7 @@ footer{
         <img class="app-icon"
           src="https://play-lh.googleusercontent.com/WDGsMRuVENnZPEpV4DEaXw12qtMY3em85xpmZqcXzeh0iT_eXFtAU9VUj-Z7xNQQd5DMqrkKSs9D0qbI1rlt=s48-rw"
           alt="Paytm">
-        <div>
+        <div class="app-info">
           <h3>Paytm</h3>
           <span class="badge">Refer & Earn</span>
         </div>
@@ -153,7 +171,7 @@ footer{
         <img class="app-icon"
           src="https://play-lh.googleusercontent.com/qy1nK2i6PLrD5YDe5er0q827BfEz7fDeZ8fqn_yNxkUbDA3jpjcM0oGWNME-mTYs5bs=s48-rw"
           alt="INDIE">
-        <div>
+        <div class="app-info">
           <h3>INDIE</h3>
           <span class="badge">Savings Account</span>
         </div>
@@ -169,7 +187,7 @@ footer{
         <img class="app-icon"
           src="https://play-lh.googleusercontent.com/FepA9QbIZEBnW7N3u52lpfc6YqyTiioXEodAW6orEpBBoh3aQLE9JSlT3s-kVUdYx_DY=w240-h480-rw"
           alt="Slice">
-        <div>
+        <div class="app-info">
           <h3>Slice</h3>
           <span class="badge">Savings Account & UPI</span>
         </div>
@@ -182,7 +200,7 @@ footer{
 
 <footer>
 © 2026 Cashback & Refer Offers<br>
-This website is for informational purposes only.
+For informational purposes only
 </footer>
 
 </body>
