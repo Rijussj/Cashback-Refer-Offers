@@ -6,32 +6,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <meta name="description" content="Join Slice app using referral code SAIKH68428 and earn rewards.">
-<meta name="keywords" content="Slice referral code, Slice refer and earn">
 
 <style>
-/* GUARANTEED BG SETUP */
+/* ===== GLOBAL RESET ===== */
 html, body{
   margin:0;
   padding:0;
   min-height:100vh;
-  background:#0b0f1a;
-  color:#ffffff;
   font-family:Arial, Helvetica, sans-serif;
 }
 
-/* Layout */
+/* ===== SAME BG AS OTHER APPS ===== */
+body{
+  background:
+    linear-gradient(180deg, #0f1430 0%, #0b0f1a 100%);
+  color:#ffffff;
+}
+
+/* ===== WRAPPER ===== */
 .wrapper{
   max-width:900px;
   margin:auto;
   padding:30px 15px;
 }
 
-/* Header */
+/* ===== HEADER ===== */
 .header{
   display:flex;
   align-items:center;
   gap:15px;
-  background:#11162a;
+  background:#12183a;
   padding:20px;
   border-radius:14px;
 }
@@ -46,21 +50,21 @@ html, body{
   margin:0;
 }
 .header p{
-  margin:6px 0 0;
-  color:#cfcfcf;
+  margin-top:6px;
+  color:#cfd6ff;
   font-size:14px;
 }
 
-/* Card */
+/* ===== CARD ===== */
 .card{
-  background:#151b2f;
-  border:1px solid #22284a;
+  background:#151b3d;
+  border:1px solid #232b63;
   border-radius:14px;
   padding:20px;
   margin-top:20px;
 }
 
-/* Referral */
+/* ===== REFERRAL ===== */
 .row{
   display:flex;
   flex-wrap:wrap;
@@ -68,47 +72,55 @@ html, body{
   margin-top:10px;
 }
 .code{
-  background:#1e2542;
+  background:#1e265c;
   padding:8px 12px;
   border-radius:8px;
   font-weight:bold;
 }
 .copy{
   padding:8px 12px;
-  background:#1f6bff;
+  background:#2a6bff;
   border:none;
   border-radius:8px;
   color:#fff;
   cursor:pointer;
 }
 
-/* Button */
+/* ===== BUTTON ===== */
 .btn{
   display:inline-block;
   margin-top:15px;
   padding:12px 18px;
-  background:#1f6bff;
+  background:#2a6bff;
   color:#fff;
   text-decoration:none;
   border-radius:10px;
 }
 
-/* Text */
+/* ===== LIST ===== */
 ul{
   margin-left:18px;
 }
 ul li{
   margin-bottom:6px;
-  color:#e0e0e0;
+  color:#e0e4ff;
 }
 
-/* Back */
+/* ===== BACK ===== */
 .back{
   display:block;
   margin-top:25px;
   color:#9aa8ff;
   text-decoration:none;
   font-size:14px;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:600px){
+  .header{
+    flex-direction:column;
+    align-items:flex-start;
+  }
 }
 </style>
 </head>
@@ -126,7 +138,7 @@ ul li{
     </div>
   </div>
 
-  <!-- REFER -->
+  <!-- REFER CARD -->
   <div class="card">
     <h3>Referral Details</h3>
 
@@ -151,9 +163,9 @@ ul li{
   <div class="card">
     <h3>About Slice</h3>
     <p>
-      Slice ek popular credit & pay-later app hai jisme aap
-      instant credit, easy EMI aur smart payments ka use
-      kar sakte ho.
+      Slice ek credit & pay-later app hai jisme aap
+      instant credit, easy EMI aur smart payments
+      ka use kar sakte ho.
     </p>
   </div>
 
