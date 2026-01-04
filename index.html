@@ -104,4 +104,92 @@ header p{
   color:#fff;
   text-decoration:none;
   font-weight:600;
-  box-shadow:0 12px 30
+  box-shadow:0 12px 30px rgba(0,114,255,.5);
+  transition:.3s;
+}
+.btn:hover{
+  transform:translateY(-3px) scale(1.03);
+}
+
+/* Footer */
+footer{
+  text-align:center;
+  padding:30px 15px;
+  font-size:13px;
+  opacity:.6;
+}
+
+/* Mobile */
+@media(max-width:768px){
+  header h1{font-size:28px;}
+  .app{flex-direction:column;align-items:flex-start;}
+  .btn{width:100%;text-align:center;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Cashback & Refer Offers</h1>
+  <p>Earn rewards from trusted Indian apps</p>
+</header>
+
+<div class="container">
+
+  <!-- PAYTM -->
+  <div class="card">
+    <div class="app">
+      <div class="app-left">
+        <img class="app-icon"
+             src="https://play-lh.googleusercontent.com/WDGsMRuVENnZPEpV4DEaXw12qtMY3em85xpmZqcXzeh0iT_eXFtAU9VUj-Z7xNQQd5DMqrkKSs9D0qbI1rlt=s48-rw"
+             alt="Paytm App">
+        <div>
+          <h3>Paytm</h3>
+          <span class="badge">Signup Bonus • Up to ₹100</span>
+        </div>
+      </div>
+      <a class="btn" href="paytm.html">View Offer</a>
+    </div>
+  </div>
+
+  <!-- PHONEPE -->
+  <div class="card">
+    <div class="app">
+      <div class="app-left">
+        <img class="app-icon"
+             src="https://play-lh.googleusercontent.com/6iyA2zVz5PyyMjK5SIxdUhrb7oh9cYVXJ93q6DZkmx07Er1o90PXYeo6mzL4VC2Gj9s=w240-h480-rw"
+             alt="PhonePe App">
+        <div>
+          <h3>PhonePe</h3>
+          <span class="badge">Rewards & Cashback</span>
+        </div>
+      </div>
+      <a class="btn" href="phonepe.html">View Offer</a>
+    </div>
+  </div>
+
+  <!-- INDIE -->
+  <div class="card">
+    <div class="app">
+      <div class="app-left">
+        <img class="app-icon"
+             src="https://play-lh.googleusercontent.com/qy1nK2i6PLrD5YDe5er0q827BfEz7fDeZ8fqn_yNxkUbDA3jpjcM0oGWNME-mTYs5bs=s48-rw"
+             alt="INDIE App">
+        <div>
+          <h3>INDIE</h3>
+          <span class="badge">Zero Balance • Earn Up to ₹250</span>
+        </div>
+      </div>
+      <a class="btn" href="indie.html">View Offer</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+© 2026 Cashback & Refer Offers • Not affiliated with Paytm, PhonePe or IndusInd Bank
+</footer>
+
+</body>
+</html>
