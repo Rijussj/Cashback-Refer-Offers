@@ -2,16 +2,22 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Slice – Savings Account & UPI | Refer & Earn</title>
+<title>Slice – Refer & Earn ₹150</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Slice Savings Account & UPI app. Refer & Earn with referral code SAIKH68428.">
+
+<meta name="description" content="Slice savings account & UPI app. Refer & Earn ₹150.">
 
 <style>
-/* ===== PAYTM STYLE BACKGROUND ===== */
-html, body{
-  margin:0; padding:0; min-height:100vh;
+/* ===== GLOBAL RESET ===== */
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
   font-family: Arial, Helvetica, sans-serif;
 }
+html, body{ min-height:100vh; }
+
+/* ===== PAYTM STYLE BACKGROUND ===== */
 body{
   background:
     radial-gradient(circle at bottom, #00c6ff 0%, transparent 45%),
@@ -21,43 +27,85 @@ body{
 }
 
 /* ===== LAYOUT ===== */
-.wrapper{ max-width:900px; margin:auto; padding:30px 15px; }
+.wrapper{
+  max-width:900px;
+  margin:auto;
+  padding:30px 15px;
+}
 
 /* ===== HEADER ===== */
 .header{
-  display:flex; align-items:center; gap:15px;
+  display:flex;
+  align-items:center;
+  gap:15px;
   background:rgba(255,255,255,0.08);
-  padding:20px; border-radius:16px;
+  padding:20px;
+  border-radius:16px;
 }
-.header img{ width:56px; height:56px; border-radius:12px; background:#fff; }
-.header h1{ font-size:24px; margin:0; }
-.header p{ margin-top:6px; color:#cfefff; font-size:14px; }
+.header img{
+  width:56px;
+  height:56px;
+  border-radius:12px;
+  background:#fff;
+}
+.header h1{ font-size:24px; }
+.header p{
+  margin-top:6px;
+  color:#cfefff;
+  font-size:14px;
+}
 
 /* ===== CARD ===== */
 .card{
   background:rgba(255,255,255,0.10);
   border:1px solid rgba(255,255,255,0.18);
-  border-radius:18px; padding:22px; margin-top:22px;
+  border-radius:18px;
+  padding:22px;
+  margin-top:22px;
 }
 
 /* ===== INFO ===== */
-.label{ margin-top:14px; font-size:14px; color:#cfefff; }
-.row{ display:flex; flex-wrap:wrap; gap:10px; margin-top:8px; }
+.label{
+  margin-top:14px;
+  font-size:14px;
+  color:#cfefff;
+}
+.row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:8px;
+}
+
+/* MOBILE LINK FIX */
 .value{
   background:rgba(0,0,0,0.35);
-  padding:10px 14px; border-radius:10px; font-weight:bold;
+  padding:10px 14px;
+  border-radius:10px;
+  font-weight:bold;
+  word-break: break-all;
+  overflow-wrap:anywhere;
 }
+
 .copy{
   padding:10px 14px;
   background:linear-gradient(135deg,#00c6ff,#0072ff);
-  border:none; border-radius:10px; color:#fff; cursor:pointer;
+  border:none;
+  border-radius:10px;
+  color:#fff;
+  cursor:pointer;
 }
 
 /* ===== BUTTON ===== */
 .btn{
-  display:inline-block; margin-top:20px; padding:14px 24px;
+  display:inline-block;
+  margin-top:20px;
+  padding:14px 24px;
   background:linear-gradient(135deg,#00c6ff,#0072ff);
-  color:#fff; text-decoration:none; border-radius:14px; font-weight:600;
+  color:#fff;
+  text-decoration:none;
+  border-radius:14px;
+  font-weight:600;
 }
 
 /* ===== LIST ===== */
@@ -65,40 +113,58 @@ ul{ margin-left:18px; }
 ul li{ margin-bottom:8px; color:#e9f6ff; }
 
 /* ===== BACK ===== */
-.back{ display:block; margin-top:28px; color:#9fdcff; text-decoration:none; font-size:14px; }
+.back{
+  display:block;
+  margin-top:28px;
+  color:#9fdcff;
+  text-decoration:none;
+  font-size:14px;
+}
 
 /* ===== MOBILE ===== */
 @media(max-width:600px){
-  .header{ flex-direction:column; align-items:flex-start; }
+  .header{
+    flex-direction:column;
+    align-items:flex-start;
+  }
 }
 </style>
 </head>
 
 <body>
+
 <div class="wrapper">
 
   <!-- HEADER -->
   <div class="header">
-    <img src="https://play-lh.googleusercontent.com/FepA9QbIZEBnW7N3u52lpfc6YqyTiioXEodAW6orEpBBoh3aQLE9JSlT3s-kVUdYx_DY=w240-h480-rw" alt="Slice App">
+    <img src="https://play-lh.googleusercontent.com/FepA9QbIZEBnW7N3u52lpfc6YqyTiioXEodAW6orEpBBoh3aQLE9JSlT3s-kVUdYx_DY=w240-h480-rw" alt="Slice">
     <div>
       <h1>Slice</h1>
       <p>Savings Account & UPI App</p>
     </div>
   </div>
 
-  <!-- TOP: REQUIRED 4 DETAILS -->
+  <!-- OFFER DETAILS -->
   <div class="card">
     <h3>Offer Details</h3>
 
     <div class="label">Referral Code</div>
     <div class="row">
       <span class="value" id="refCode">SAIKH68428</span>
-      <button class="copy" onclick="copyText()">Copy</button>
+      <button class="copy" onclick="copyText('refCode')">Copy</button>
     </div>
 
-    <div class="label">Signup Bonus</div>
+    <div class="label">Refer & Earn</div>
     <div class="row">
-      <span class="value">As per Slice offer*</span>
+      <span class="value">₹150 Refer & Earn Bonus*</span>
+    </div>
+
+    <div class="label">Referral Link</div>
+    <div class="row">
+      <span class="value" id="refLink">
+        https://t.sliceit.com/s?c=baZ5iS1&ic=SAIKH68428
+      </span>
+      <button class="copy" onclick="copyText('refLink')">Copy</button>
     </div>
 
     <a class="btn" href="https://t.sliceit.com/s?c=baZ5iS1&ic=SAIKH68428">
@@ -106,66 +172,37 @@ ul li{ margin-bottom:8px; color:#e9f6ff; }
     </a>
   </div>
 
-  <!-- BELOW: ADDITIONAL DETAILS -->
+  <!-- ABOUT -->
   <div class="card">
     <h3>About Slice</h3>
-    <p>Slice ek digital <b>Savings Account</b> aur <b>UPI banking app</b> hai jisse daily payments aur basic banking ka use hota hai.</p>
+    <p>
+      Slice ek modern <b>savings account aur UPI banking app</b> hai
+      jisse aap daily payments, UPI transfers aur basic banking
+      services easily use kar sakte ho.
+    </p>
   </div>
 
+  <!-- HOW TO EARN -->
   <div class="card">
-    <h3>Account Type</h3>
+    <h3>How to Earn ₹150?</h3>
     <ul>
-      <li>Digital Savings Account</li>
-      <li>UPI-enabled banking</li>
-      <li>Partner bank ke through services</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>Key Features</h3>
-    <ul>
-      <li>UPI Scan & Pay</li>
-      <li>Send / Receive Money</li>
-      <li>Bill Payments & Recharges</li>
-      <li>Debit Card support (as applicable)</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>Eligibility</h3>
-    <ul>
-      <li>Indian resident</li>
-      <li>Valid Aadhaar & PAN</li>
-      <li>Smartphone with internet</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>How to Open Account</h3>
-    <ul>
-      <li>Slice app download karein</li>
-      <li>Mobile number verify karein</li>
-      <li>KYC complete karein</li>
-      <li>Account activate ho jayega</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>Important Notes</h3>
-    <ul>
-      <li>Offers time-to-time change ho sakte hain</li>
-      <li>Terms Slice app policies par depend karte hain</li>
+      <li>Referral link se Slice app download karein</li>
+      <li>Account open & KYC complete karein</li>
+      <li>First transaction / eligibility complete karein</li>
+      <li>₹150 referral bonus paayein*</li>
     </ul>
   </div>
 
   <a class="back" href="index.html">← Back to Home</a>
+
 </div>
 
 <script>
-function copyText(){
-  navigator.clipboard.writeText(document.getElementById("refCode").innerText);
-  alert("Referral code copied");
+function copyText(id){
+  navigator.clipboard.writeText(document.getElementById(id).innerText);
+  alert("Copied");
 }
 </script>
+
 </body>
 </html>
