@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>INDIE – Savings Account & UPI | Refer & Earn</title>
+<title>INDIE – Signup ₹250 | Refer & Earn ₹150</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="INDIE Savings Account & UPI app by IndusInd Bank. Refer & Earn using referral code slzklx4r.">
+<meta name="description" content="INDIE savings account signup bonus up to ₹250 and refer & earn ₹150.">
 
 <style>
 /* ===== GLOBAL RESET ===== */
@@ -15,10 +15,7 @@
   padding:0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-html, body{
-  min-height:100vh;
-}
+html, body{ min-height:100vh; }
 
 /* ===== PAYTM STYLE BACKGROUND ===== */
 body{
@@ -51,10 +48,7 @@ body{
   border-radius:12px;
   background:#fff;
 }
-.header h1{
-  font-size:24px;
-  margin:0;
-}
+.header h1{ font-size:24px; }
 .header p{
   margin-top:6px;
   color:#cfefff;
@@ -82,12 +76,17 @@ body{
   gap:10px;
   margin-top:8px;
 }
+
+/* MOBILE LINK FIX */
 .value{
   background:rgba(0,0,0,0.35);
   padding:10px 14px;
   border-radius:10px;
   font-weight:bold;
+  word-break: break-all;
+  overflow-wrap:anywhere;
 }
+
 .copy{
   padding:10px 14px;
   background:linear-gradient(135deg,#00c6ff,#0072ff);
@@ -110,13 +109,8 @@ body{
 }
 
 /* ===== LIST ===== */
-ul{
-  margin-left:18px;
-}
-ul li{
-  margin-bottom:8px;
-  color:#e9f6ff;
-}
+ul{ margin-left:18px; }
+ul li{ margin-bottom:8px; color:#e9f6ff; }
 
 /* ===== BACK ===== */
 .back{
@@ -143,30 +137,43 @@ ul li{
 
   <!-- HEADER -->
   <div class="header">
-    <img src="https://play-lh.googleusercontent.com/qy1nK2i6PLrD5YDe5er0q827BfEz7fDeZ8fqn_yNxkUbDA3jpjcM0oGWNME-mTYs5bs=s48-rw" alt="INDIE App">
+    <img src="https://play-lh.googleusercontent.com/qy1nK2i6PLrD5YDe5er0q827BfEz7fDeZ8fqn_yNxkUbDA3jpjcM0oGWNME-mTYs5bs=s48-rw" alt="INDIE">
     <div>
       <h1>INDIE</h1>
       <p>Savings Account & UPI App</p>
     </div>
   </div>
 
-  <!-- OFFER DETAILS (SAME AS OTHER PAGES) -->
+  <!-- OFFER DETAILS -->
   <div class="card">
     <h3>Offer Details</h3>
 
     <div class="label">Referral Code</div>
     <div class="row">
       <span class="value" id="refCode">slzklx4r</span>
-      <button class="copy" onclick="copyText()">Copy</button>
+      <button class="copy" onclick="copyText('refCode')">Copy</button>
     </div>
 
     <div class="label">Signup Bonus</div>
     <div class="row">
-      <span class="value">Up to ₹250 Cashback*</span>
+      <span class="value">Up to ₹250 Signup Bonus*</span>
+    </div>
+
+    <div class="label">Refer & Earn</div>
+    <div class="row">
+      <span class="value">₹150 Refer & Earn Bonus*</span>
+    </div>
+
+    <div class="label">Referral Link</div>
+    <div class="row">
+      <span class="value" id="refLink">
+        https://indieapp-referral.onelink.me/WEEF/slzklx4r
+      </span>
+      <button class="copy" onclick="copyText('refLink')">Copy</button>
     </div>
 
     <a class="btn" href="https://indieapp-referral.onelink.me/WEEF/slzklx4r">
-      Open INDIE Account
+      Download INDIE App
     </a>
   </div>
 
@@ -174,42 +181,19 @@ ul li{
   <div class="card">
     <h3>About INDIE</h3>
     <p>
-      INDIE ek digital <b>Savings Account & UPI banking app</b> hai
-      jo IndusInd Bank ke dwara offer kiya jata hai. Isse daily
-      banking, payments aur account management hota hai.
+      INDIE ek modern <b>savings account aur UPI banking app</b> hai
+      jo IndusInd Bank ke through offer kiya jata hai. Isse aap
+      daily banking aur digital payments easily kar sakte ho.
     </p>
   </div>
 
-  <!-- FEATURES -->
+  <!-- HOW TO EARN -->
   <div class="card">
-    <h3>Key Features</h3>
+    <h3>How to Earn Bonus?</h3>
     <ul>
-      <li>Digital savings account</li>
-      <li>UPI payments & scan to pay</li>
-      <li>Send & receive money instantly</li>
-      <li>Debit card support</li>
-      <li>Secure banking by IndusInd Bank</li>
-    </ul>
-  </div>
-
-  <!-- ELIGIBILITY -->
-  <div class="card">
-    <h3>Eligibility</h3>
-    <ul>
-      <li>Indian resident</li>
-      <li>Valid Aadhaar & PAN</li>
-      <li>Smartphone with internet</li>
-    </ul>
-  </div>
-
-  <!-- HOW TO OPEN -->
-  <div class="card">
-    <h3>How to Open Account</h3>
-    <ul>
-      <li>INDIE app download karein</li>
-      <li>Mobile number verify karein</li>
-      <li>KYC complete karein</li>
-      <li>Account activate ho jayega</li>
+      <li>Referral link se INDIE app download karein</li>
+      <li>Account open karke up to ₹250 signup bonus paayein*</li>
+      <li>Friends ko refer karke ₹150 per referral earn karein*</li>
     </ul>
   </div>
 
@@ -218,11 +202,9 @@ ul li{
 </div>
 
 <script>
-function copyText(){
-  navigator.clipboard.writeText(
-    document.getElementById("refCode").innerText
-  );
-  alert("Referral code copied");
+function copyText(id){
+  navigator.clipboard.writeText(document.getElementById(id).innerText);
+  alert("Copied");
 }
 </script>
 
